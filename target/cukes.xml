@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="33.264">
+    <testcase classname="Lamsa Login Scenarios" name="User is not able to login with a valid username and invalid password_AR" time="32.692">
+        <failure message="Verify messages expected:&lt;... إدخال كلمة سر صحيحة[]&gt; but was:&lt;... إدخال كلمة سر صحيحة[.]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given User navigate to login page_AR........................................passed
+When User enters valid username and invalid password "1234".................passed
+And User clicks Sign In button..............................................passed
+Then User should see "الرجاء إدخال كلمة سر صحيحة" messages..................failed
+
+StackTrace:
+org.junit.ComparisonFailure: Verify messages expected:<... إدخال كلمة سر صحيحة[]> but was:<... إدخال كلمة سر صحيحة[.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at step_definitions.Login_Step_Definitions.user_should_see_messages(Login_Step_Definitions.java:79)
+	at ✽.User should see "الرجاء إدخال كلمة سر صحيحة" messages(file:///C:/Users/murat/IdeaProjects/LamsaWebProject/src/test/resources/features/Login.feature:44)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
